@@ -41,13 +41,13 @@ button:disabled {
 }
 
 .bodys {
-  margin-top: max(2vh, 40px);
+  margin-top: max(6vh, 120px);
   overflow: hidden;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: max(1vh, 20px);
+  gap: max(2vh, 40px);
 }
 
 .divv {
@@ -111,6 +111,6 @@ button:disabled {
     background-position: 0% 50%; /* 初期位置 */
   } 
   to {
-    background-position: 350% 50%; /* 終了位置 */
+    background-position: 300% 50%; /* 終了位置 */
   }
 }
