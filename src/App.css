@@ -1,0 +1,76 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  overflow: hidden;
+}
+
+button {
+  box-sizing: border-box;
+}
+
+button:disabled {
+  border: none;
+}
+
+.bodys {
+  overflow: hidden;
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+.result {
+  font-size: 50px;
+}
+
+.image {
+  position: absolute;
+  width: 75px;
+  top: 55vh;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.bulldozer {
+  animation: slide 2.05s linear;
+  width: 170px;
+  top: 46vh;
+  left: 100%;
+  transform: translate(-50%);
+  z-index: 100;
+}
+
+
+@keyframes slide {
+  from {
+    left: 100%;
+  } to {
+    left: -200px;
+  }
+}
+
+
+.rainbow {
+  background: linear-gradient(45deg, #00ffbf, #5faaff, violet, red, orange, yellow, lime, #00ffbf);
+  background-size: 300% 300%;
+  background-clip: text;
+  -webkit-background-clip: text; /* Safari 用 */
+  -webkit-text-fill-color: transparent; /* テキストを透明に */
+  animation: rainbow-grad 5s linear infinite;
+}
+
+@keyframes rainbow-grad {
+  from {
+    background-position: 0% 0%; /* 初期位置 */
+  } 
+  to {
+    background-position: 300% 0%; /* 終了位置 */
+  }
+}
