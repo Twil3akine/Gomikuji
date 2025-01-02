@@ -41,13 +41,13 @@ button:disabled {
 }
 
 .bodys {
-  margin-top: max(1vh, 20px);
+  margin-top: max(2vh, 40px);
   overflow: hidden;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: max(.5vh, 10px);
+  gap: max(1vh, 20px);
 }
 
 .divv {
@@ -55,7 +55,7 @@ button:disabled {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: max(.1vh, 2px);
+  gap: max(.2vh, 4px);
 }
 
 .card {
