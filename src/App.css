@@ -12,6 +12,7 @@ h1, h3 {
 
 h1 {
   font-size: 40px;
+  line-break: strict;
 }
 
 button {
