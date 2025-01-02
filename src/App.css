@@ -41,7 +41,7 @@ button:disabled {
 }
 
 .bodys {
-  margin-top: max(5vh, 100px);
+  margin-top: max(3vh, 60px);
   overflow: hidden;
   display: flex;
   flex-direction: column;
