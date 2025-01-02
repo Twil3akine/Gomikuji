@@ -41,7 +41,7 @@ button:disabled {
 }
 
 .bodys {
-  margin-top: max(6vh, 120px);
+  margin-top: max(5vh, 100px);
   overflow: hidden;
   display: flex;
   flex-direction: column;
@@ -87,7 +87,6 @@ button:disabled {
   z-index: 100;
 }
 
-
 @keyframes slide {
   from {
     left: 100%;
@@ -95,7 +94,6 @@ button:disabled {
     left: -200px;
   }
 }
-
 
 .rainbow {
   background: linear-gradient(45deg, #00ffbf, #5faaff, violet, red, orange, yellow, lime, #00ffbf);
