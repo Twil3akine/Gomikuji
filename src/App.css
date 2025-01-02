@@ -41,12 +41,21 @@ button:disabled {
 }
 
 .bodys {
+  margin-top: max(1vh, 20px);
   overflow: hidden;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 5%;
+  gap: max(.5vh, 10px);
+}
+
+.divv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: max(.1vh, 2px);
 }
 
 .card {
@@ -99,9 +108,9 @@ button:disabled {
 
 @keyframes rainbow-grad {
   from {
-    background-position: 0% 0%; /* 初期位置 */
+    background-position: 0% 50%; /* 初期位置 */
   } 
   to {
-    background-position: 300% 0%; /* 終了位置 */
+    background-position: 350% 50%; /* 終了位置 */
   }
 }

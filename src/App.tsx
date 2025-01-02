@@ -66,10 +66,12 @@ function App() {
     <div className='bodys'>
       <img src={imgBulldozer} alt="ブルドーザーの画像" className='image bulldozer' style={imageStyle} />
       <img src={imgOmikuji} alt="おみくじの画像" className='image omikuji'/>
-      <h1>じゃぱにーず おみくじ</h1>
-      <h3 className="read-the-docs">
-        大吉 吉 中吉 小吉 凶 大凶 睾丸が出るよ！
-      </h3>
+      <div className='divv'>
+        <h1>じゃぱにーず おみくじ</h1>
+        <h3 className="read-the-docs">
+          大吉 吉 中吉 小吉 凶 大凶 睾丸が出るよ！
+        </h3>
+      </div>
       <div className="card">
         <button onClick={isDisabled ? shareResult : getOmikuji} disabled={isLoading} style={buttonStyle} >
           {buttonText}
