@@ -49,7 +49,7 @@ function App() {
   };
 
   const shareResult = () => {
-    const url = encodeURIComponent("japani-zu-omikuji.pages.dev");
+    const url = encodeURIComponent("gomikuji.pages.dev");
     const text = encodeURIComponent(`今日の運勢は${fortuneResult}でした！\n`);
     window.open(`https://twitter.com/share?url=${url}&text=${text}`, "_blank", "noopener,noreferrer");
   }
