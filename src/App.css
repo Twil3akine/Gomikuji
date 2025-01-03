@@ -72,6 +72,7 @@ button:disabled {
 }
 
 .image {
+  border-top: 15vh;
   position: absolute;
   width: 75px;
   top: 75vh;
