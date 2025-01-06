@@ -2,7 +2,7 @@ import React, { useState, useRef, Dispatch, SetStateAction } from 'react'
 import './App.css'
 
 function App() {
-  const [fortuneResult, setResult]: [string, Dispatch<SetStateAction<string>>] = useState("結果がここに出るよ！");
+  const [fortuneResult, setResult]: [string, Dispatch<SetStateAction<string>>] = useState("結果");
   const [buttonText, setButtonText]: [string, Dispatch<SetStateAction<string>>] = useState("おみくじをひく");
   const [isDisabled, setIsDisabled]: [boolean, Dispatch<SetStateAction<boolean>>] = useState(false);
   const [isLoading, setIsLoading]: [boolean, Dispatch<SetStateAction<boolean>>] = useState(false);
@@ -67,7 +67,7 @@ function App() {
       <img src={imgBulldozer} alt="ブルドーザーの画像" className='image bulldozer' style={imageStyle} />
       <img src={imgOmikuji} alt="おみくじの画像" className='image omikuji'/>
       <div className='divv'>
-        <h1>じゃぱにーず おみくじ</h1>
+        <h1>ごみくじ</h1>
         <h3 className="read-the-docs">
           大吉 吉 中吉 小吉 凶 大凶 睾丸が出るよ！
         </h3>
