@@ -9,8 +9,8 @@ function App() {
   const resultRef = useRef<HTMLHeadingElement>(null);
 
   const LIMIT: number = 99;
-  const imgBulldozer: string = "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjRboCZxIDNvaTnwrKcTbo29MSYOwteU_AGemW_IsvATrx_Vu328dVyYNqdNHQqwdFRFLlsPFTwQq49eiFrG69ghHV9NTU4XWpl05GZDVX3eha7RKsHinK3oAcdl4_FflyVCz7avMJQIZ-4/s400/kouji_bulldozer_dozer_shovel.png";
-  const imgOmikuji: string = "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjmg2kn9DyMES8p81iw0-civQjYw0bIDleQAH8gOAp_mv75OnJaeBgcv6vsVIRNnHT-BTuDfmmQ4X8bgRi3U6tQdG-m5C0nYzWahyDp4vyYTPs7BvcsAZVIhzkHt-scsWxKhE3B3JMs_Y8/s400/syougatsu2_omijikuji2.png";
+  const imgBulldozer: string = "@/img/bulldozer.png";
+  const imgOmikuji: string = "@/img/omikuji.png";
 
   const determineFortune: (n: number) => string = (omikujiNumber: number) => {
     /*
