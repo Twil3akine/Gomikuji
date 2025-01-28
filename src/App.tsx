@@ -9,8 +9,8 @@ function App() {
   const resultRef = useRef<HTMLHeadingElement>(null);
 
   const LIMIT: number = 99;
-  const imgBulldozer: string = "@/img/bulldozer.png";
-  const imgOmikuji: string = "@/img/omikuji.png";
+  const imgBulldozer: string = "src/img/bulldozer.png";
+  const imgOmikuji: string = "src/img/omikuji.png";
 
   const determineFortune: (n: number) => string = (omikujiNumber: number) => {
     /*

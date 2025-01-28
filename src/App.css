@@ -80,8 +80,8 @@ button:disabled {
 
 .bulldozer {
   animation: slide 2.05s linear;
-  width: 170px;
-  top: 66vh;
+  width: 450px;
+  top: 45vh;
   left: 100%;
   transform: translate(-50%);
   z-index: 100;
