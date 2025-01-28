@@ -27,9 +27,6 @@ button {
   border-radius: 12px;
   box-sizing: border-box;
   transition: all .15s;
-}
-
-button:focus {
   border: solid 2px #eee;
 }
 
