@@ -45,7 +45,7 @@ button:disabled {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: max(2vh, 40px);
+  gap: max(3vh, 60px);
 }
 
 .divv {
@@ -71,10 +71,11 @@ button:disabled {
 .image {
   border-top: 15vh;
   position: absolute;
-  width: 75px;
-  top: 75vh;
+  width: 200px;
+  top: 70vh;
   left: 50%;
   transform: translate(-50%, -50%);
+  cursor: pointer;
 }
 
 .bulldozer {

@@ -2,8 +2,7 @@ import React, { useState, useRef, Dispatch, SetStateAction } from 'react'
 import './App.css'
 
 function App() {
-  const [fortuneResult, setResult]: [string, Dispatch<SetStateAction<string>>] = useState("結果");
-  const [buttonText, setButtonText]: [string, Dispatch<SetStateAction<string>>] = useState("おみくじをひく");
+  const [fortuneResult, setResult]: [string, Dispatch<SetStateAction<string>>] = useState("おみくじ押してね");
   const [isDisabled, setIsDisabled]: [boolean, Dispatch<SetStateAction<boolean>>] = useState(false);
   const [isLoading, setIsLoading]: [boolean, Dispatch<SetStateAction<boolean>>] = useState(false);
 
@@ -33,6 +32,11 @@ function App() {
   };
 
   const getOmikuji: () => void = () => {
+    if (isDisabled) {
+      shareResult();
+      return;
+    }
+
     const randomNumber: number = Math.floor(Math.random() * LIMIT) + 1;
 
     setResult("おみくじ、轢いてるよ！");
@@ -43,7 +47,6 @@ function App() {
       const fortune: string = determineFortune(randomNumber);
       setResult(fortune);
       setIsLoading(false);
-      setButtonText("共有する");
       resultRef.current?.classList.add("rainbow");
     }, 2000);
   };
@@ -54,10 +57,6 @@ function App() {
     window.open(`https://twitter.com/share?url=${url}&text=${text}`, "_blank", "noopener,noreferrer");
   }
 
-  const buttonStyle: React.CSSProperties = {
-    cursor: isLoading ? "wait" : "pointer",
-  };
-
   const imageStyle: React.CSSProperties = {
     display: isLoading ? "block" : "none",
   };
@@ -65,17 +64,12 @@ function App() {
   return (
     <div className='bodys'>
       <img src={imgBulldozer} alt="ブルドーザーの画像" className='image bulldozer' style={imageStyle} />
-      <img src={imgOmikuji} alt="おみくじの画像" className='image omikuji'/>
+      <img src={imgOmikuji} alt="おみくじの画像" className='image' onClick={getOmikuji}/>
       <div className='divv'>
         <h1>ごみくじ</h1>
         <h3 className="read-the-docs">
           大吉 吉 中吉 小吉 凶 大凶 睾丸が出るよ！
         </h3>
-      </div>
-      <div className="card">
-        <button onClick={isDisabled ? shareResult : getOmikuji} disabled={isLoading} style={buttonStyle} >
-          {buttonText}
-        </button>
       </div>
       <h1 className='result' ref={resultRef}>{ fortuneResult }</h1>
     </div>
